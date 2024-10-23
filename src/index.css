@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 208, 37%, 20%;
+  }
+}
+
+@layer base {
+  * {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    transition: all 500ms linear;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply text-background;
+  }
+}
